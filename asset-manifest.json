@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.53704c07.css",
-    "main.js": "/portfolio-website/static/js/main.8ab26f0d.js",
+    "main.css": "/portfolio-website/static/css/main.c16aa889.css",
+    "main.js": "/portfolio-website/static/js/main.f1558f59.js",
     "static/js/787.749b4a44.chunk.js": "/portfolio-website/static/js/787.749b4a44.chunk.js",
-    "static/media/profilephoto.jpg": "/portfolio-website/static/media/profilephoto.d2abca528c75a2fa4b40.jpg",
-    "static/media/e-commerce.png": "/portfolio-website/static/media/e-commerce.a950dcfca9a658b304e0.png",
-    "static/media/weather-app-cover.png": "/portfolio-website/static/media/weather-app-cover.bd43d330e6e147ec716c.png",
     "index.html": "/portfolio-website/index.html",
-    "main.53704c07.css.map": "/portfolio-website/static/css/main.53704c07.css.map",
-    "main.8ab26f0d.js.map": "/portfolio-website/static/js/main.8ab26f0d.js.map",
+    "main.c16aa889.css.map": "/portfolio-website/static/css/main.c16aa889.css.map",
+    "main.f1558f59.js.map": "/portfolio-website/static/js/main.f1558f59.js.map",
     "787.749b4a44.chunk.js.map": "/portfolio-website/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53704c07.css",
-    "static/js/main.8ab26f0d.js"
+    "static/css/main.c16aa889.css",
+    "static/js/main.f1558f59.js"
   ]
 }
