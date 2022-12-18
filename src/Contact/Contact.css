@@ -1,0 +1,52 @@
+.contact-container {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.contact-information {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 75px;
+    font-family: 'Uchen', serif;
+}
+
+.contact-container > h1 {
+    padding-top: 100px;
+    padding-bottom: 10rem;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.fa-phone{
+    padding-right: 20px;
+}
+
+.fa-envelope {
+    padding-right: 20px;
+}
+
+.fa-github {
+    padding-right: 20px;
+}
+
+.fa-linkedin {
+    padding-right: 20px;
+}
+
+  /************ MEDIA QUERIES ***********/
+
+  @media (max-width:900px) {
+    .contact-information {
+        font-size: 4vw;
+    }
+
+    .contact-container > h1 {
+        font-size: 40px;
+        padding-top: 50px;
+        padding-bottom: 5rem;
+    }
+  }

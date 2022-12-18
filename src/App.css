@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Kanit', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 }
 
-.App-logo {
-  height: 40vmin;
+:root {
+  height: 100vh;
+  width: 100vw;
+  --projects-back: white;
+  --background: rgb(27, 15, 49);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.background-img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+}
+
+
+/* Disable react-items-carousel arrow wrapper clickable event */
+.sc-ifAKCX {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.arrow {
+  position: relative;
+  pointer-events: all;
+  background: transparent;
+  border-top: 1vmin solid white;
+  border-right: 1vmin solid white;
+  -webkit-box-shadow: 0 0 0 lightgray;
+          box-shadow: 0 0 0 lightgray;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  padding: 2.5vw;
+}
+
+.arrow.left {
+  left: 4.2vw;
+  -webkit-transform: translate3d(0, -50%, 0) rotate(-135deg);
+          transform: translate3d(0, -50%, 0) rotate(-135deg);
+}
+
+.arrow.right {
+  right: 4.2vw;
+  -webkit-transform: translate3d(0, -50%, 0) rotate(45deg);
+          transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.arrow:hover {
+  border-color: orange;
+  -webkit-box-shadow: 0.5vmin -0.5vmin 0 white;
+          box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+
+.arrow:before {
+  -webkit-transform: translate(-40%, -60%) rotate(45deg);
+          transform: translate(-40%, -60%) rotate(45deg);
+}
+
+
+/************ MEDIA QUERIES ***********/
+
+@media  (max-width: 350px) {
+  .arrow.right {
+    right: 0;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .arrow.left {
+    left: 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .arrow {
+    padding: 10px;
+    bottom: 60px;
   }
 }
