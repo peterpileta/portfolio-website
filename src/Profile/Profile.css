@@ -55,8 +55,8 @@
 @media  (max-width: 900px) {
   .profile-details {
     padding-bottom: 20px;
-    font-size: 0.8rem;
-    width: 12rem;
+    font-size: 3vw;
+    width: 70vw;
   }
 
   .profile-parent {
