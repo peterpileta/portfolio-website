@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#name {
+    font-size: 30px;
+    text-align: center;
+}
+
