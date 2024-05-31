@@ -1,0 +1,63 @@
+/*
+   New Perspectives on HTML
+   Tutorial 3
+   Case Problem 1
+
+   ICI Text and Color Styles
+   Author: Peter Pileta
+   Date: 05/31/2024
+
+   Filename:c_styles.css
+   Supporting Files:none
+
+*/
+
+/*body styles*/
+body
+{
+	background-color:black;
+	color:white;
+	font-family:Century Gothic,sans-serif;
+}
+
+/*heading styles*/
+header h1
+{
+	color:yellow;
+	font-family:Courier New,courier,monospace;
+	font-size:28px;
+	letter-spacing:20px;
+	text-align:center;
+}
+
+/*article styles*/
+article h2
+{
+	font-size:24px;
+	font-weight:normal;
+	letter-spacing:5px;
+}
+
+article p
+{
+	text-align:justify;
+}
+
+/* article class 'keyword' style*/
+strong.keyword
+{
+	color:yellow;
+	font-weight:normal;
+}
+
+/*footer styles*/
+footer p
+{
+		text-align:center;
+}
+
+/*image styles*/
+#locks
+{
+	border:0px none; 
+}
