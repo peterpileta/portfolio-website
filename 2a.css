@@ -1,14 +1,42 @@
-body {
-    text-align: center;
+#name {
+    font-size: 50px;
+    font-family: 'Teko', sans-serif;
+    margin-top: 10vh;
 }
 
-div {
-    width: 50%;
+div, a {
+    opacity: 0;
+    transition: opacity 5s;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 60%;
     margin: 0 auto;
 }
 
-#name {
-    font-size: 30px;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+html {
     text-align: center;
 }
 
+
+body {
+    background-image: url('image-from-rawpixel-id-2541676-jpeg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
