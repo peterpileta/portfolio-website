@@ -1,0 +1,41 @@
+p {
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+p, table {
+    opacity: 0;
+    transition: opacity 5s;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+table {
+    margin: 0 auto;
+}
+
+html {
+    font-family: "Teko", sans-serif;
+    background-image: url('image-from-rawpixel-id-2541676-jpeg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+td {
+    text-align: center;
+    border-radius: 10%;
+}
