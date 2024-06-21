@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"], textarea, select, input[type="file"] {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Valencia Logo">
+        <form action="/submit_form" method="post" enctype="multipart/form-data">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            
+            <label>Colors:</label>
+            <input type="checkbox" id="red" name="colors" value="red">
+            <label for="red">Red</label>
+            <input type="checkbox" id="white" name="colors" value="white">
+            <label for="white">White</label>
+            <input type="checkbox" id="blue" name="colors" value="blue">
+            <label for="blue">Blue</label>
+            <br>
+            
+            <label for="sport">Favorite Sport:</label>
+            <select id="sport" name="sport">
+                <option value="soccer">Soccer</option>
+                <option value="basketball">Basketball</option>
+                <option value="baseball">Baseball</option>
+                <option value="tennis">Tennis</option>
+                <option value="golf">Golf</option>
+                <option value="swimming">Swimming</option>
+                <option value="running">Running</option>
+                <option value="cycling">Cycling</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="rugby">Rugby</option>
+            </select>
+            
+            <label for="global_warming">Thoughts on Global Warming:</label>
+            <textarea id="global_warming" name="global_warming" rows="20" cols="50"></textarea>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" maxlength="10" required>
+            
+            <label for="file">File Submission:</label>
+            <input type="file" id="file" name="file">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
