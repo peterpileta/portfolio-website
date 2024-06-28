@@ -29,14 +29,14 @@ html {
 }
 
 
-body {
-    background-image: url('image-from-rawpixel-id-2541676-jpeg.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 a {
     text-decoration: none;
 }
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
