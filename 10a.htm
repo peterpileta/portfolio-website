@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Comparison</title>
+</head>
+<body>
+    <h1>Number Comparison</h1>
+    <p>Enter two different numbers:</p>
+    <form id="numberForm">
+        <label for="number1">Number 1:</label>
+        <input type="number" id="number1" name="number1" required>
+        <br>
+        <label for="number2">Number 2:</label>
+        <input type="number" id="number2" name="number2" required>
+        <br>
+        <input type="button" value="Submit" onclick="processNumbers()">
+    </form>
+    <div id="results"></div>
+
+    <script>
+        function processNumbers() {
+            // Get the values from the input fields
+            var x = parseFloat(document.getElementById('number1').value);
+            var y = parseFloat(document.getElementById('number2').value);
+
+            // Calculate sum and product
+            var sum = x + y;
+            var product = x * y;
+
+            // Determine which number is bigger
+            var comparison;
+            if (x > y) {
+                comparison = x + " is bigger than " + y;
+            } else if (x < y) {
+                comparison = y + " is bigger than " + x;
+            } else {
+                comparison = "Both numbers are equal";
+            }
+
+            // Display the results
+            var resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = "<p>The sum of " + x + " and " + y + " is " + sum + ".</p>" +
+                                   "<p>The product of " + x + " and " + y + " is " + product + ".</p>" +
+                                   "<p>" + comparison + ".</p>";
+        }
+    </script>
+</body>
+</html>
